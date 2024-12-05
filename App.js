@@ -13,15 +13,12 @@ export default function App() {
     <SafeAreaProvider>
       {/* Contêiner principal para gerenciar toda a navegação */}
       <NavigationContainer>
-        {/* Configuração do navegador de pilha */}
         <Stack.Navigator>
-          {/* Tela inicial do app (HomeScreen), sem exibir o cabeçalho padrão */}
           <Stack.Screen
             name="Home"
             component={HomeScreen}
             options={{ headerShown: false }} // Oculta o cabeçalho padrão
           />
-          {/* Tela para adicionar exercícios, também sem cabeçalho padrão */}
           <Stack.Screen
             name="Add Exercise"
             component={AddExerciseScreen}
